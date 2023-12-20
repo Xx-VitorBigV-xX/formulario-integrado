@@ -1,0 +1,32 @@
+{
+  "name": "formulario",
+  "version": "1.0.0",
+  "description": "formulario integrado com banco de dados",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xx-VitorBigV-xX/formulario-integrado.git"
+  },
+  "author": "Vitor Hugo Amaro Aristides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xx-VitorBigV-xX/formulario-integrado/issues"
+  },
+  "homepage": "https://github.com/Xx-VitorBigV-xX/formulario-integrado#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "oracledb": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/oracledb": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
+}
