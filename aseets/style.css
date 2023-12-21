@@ -3,19 +3,80 @@ body{
 }
 .main_Login{
      background-color: #201b2c;
-    width: 100vw;
-    /* ! uma vw é -> 1% de pixel da viewport, igual para o vh  */
-    height: 100vh;
-   
+     width: 100vw;
+     /* ! uma vw é -> 1% de pixel da viewport, igual para o vh  */
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     /* * Justificando o Espaço, no plano cartesiano eixo X*/
+     align-items: center;
+     /* *Justificando itens no eixo y */
+     /* ? Caso use o flex-direction o alin-item passa a ser o eixo x e o justify-content passa a ser o eixo y */
 
 }
 .left_login{
- 
-    /* padding: ; */
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
 }
+.left_login h1{
+color: #77ffc0;
+}
+
 .right_login{
-    display: block;
-    background-color: blue;
-    width: 50%;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-items: end;
+    align-items: center;
+
+}
+
+.card_login{
+    width: 60%;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: center; 
+    padding: 30px 35px;
+    background:#2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    /* ! O primeiro valor se refere-se ao eixo x, segundo refere-se a sombra para baixo ou para cima,terceiro valor é o blur e o ultimo é a cor */
+}
+
+               
+.title{
+    color: #00ff88;
+    font-weight: 800;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+}
+.textfild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textfild input{
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    padding:15px;
+    background:#514869;
+    color: #f0ffffde;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button > button{
+    background-color: #00ff88;
 
 }
