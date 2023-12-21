@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+.main_Login{
+     background-color: #201b2c;
+    width: 100vw;
+    /* ! uma vw é -> 1% de pixel da viewport, igual para o vh  */
+    height: 100vh;
+   
+
+}
+.left_login{
+ 
+    /* padding: ; */
+}
+.right_login{
+    display: block;
+    background-color: blue;
+    width: 50%;
+
+}
