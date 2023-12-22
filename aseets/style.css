@@ -1,82 +1,106 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-.main_Login{
-     background-color: #201b2c;
-     width: 100vw;
-     /* ! uma vw é -> 1% de pixel da viewport, igual para o vh  */
-     height: 100vh;
-     display: flex;
-     justify-content: center;
-     /* * Justificando o Espaço, no plano cartesiano eixo X*/
-     align-items: center;
-     /* *Justificando itens no eixo y */
-     /* ? Caso use o flex-direction o alin-item passa a ser o eixo x e o justify-content passa a ser o eixo y */
-
+.main_Login {
+  background-color: #201b2c;
+  width: 100vw;
+  /* ! uma vw é -> 1% de pixel da viewport, igual para o vh  */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* * Justificando o Espaço, no plano cartesiano eixo X*/
+  align-items: center;
+  /* *Justificando itens no eixo y */
+  /* ? Caso use o flex-direction o alin-item passa a ser o eixo x e o justify-content passa a ser o eixo y */
 }
-.left_login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    
+.left_login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.left_login h1{
-color: #77ffc0;
+.left_login h1 {
+  color: #77ffc0;
 }
 
-.right_login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-items: end;
-    align-items: center;
-
+.right_login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-items: end;
+  align-items: center;
 }
 
-.card_login{
-    width: 60%;
-    flex-direction: column;
-    justify-content:center; 
-    align-items: center; 
-    padding: 30px 35px;
-    background:#2f2841;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-    /* ! O primeiro valor se refere-se ao eixo x, segundo refere-se a sombra para baixo ou para cima,terceiro valor é o blur e o ultimo é a cor */
+.card_login {
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+  /* ! O primeiro valor se refere-se ao eixo x, segundo refere-se a sombra para baixo ou para cima,terceiro valor é o blur e o ultimo é a cor */
 }
 
-               
-.title{
-    color: #00ff88;
-    font-weight: 800;
-    justify-content:center;
-    align-items: center;
-    display: flex;
+.title {
+  color: #00ff88;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.textfild{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.textfild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
 }
-.textfild input{
-    display: flex;
-    border: none;
-    border-radius: 10px;
-    padding:15px;
-    background:#514869;
-    color: #f0ffffde;
+.textfild input {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  outline: none;
+  box-shadow: 0px 10px 40px #00000056;
+  box-sizing: border-box; /* ? desta Maneira o tamanho da div filho nunca vai ultrapasar a div mãe*/
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.button > button{
-    background-color: #00ff88;
 
+.textfild input::placeholder{
+    color:#9ea9a9de
+}
+
+.label {
+  display: flex;
+  color: #f0ffffde;
+  margin-right: 8vw;
+  margin-bottom: 10px;
+}
+
+.label > i {
+  margin-right: 0.5vw;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button > button {
+  background-color: #00ff88;
+  box-shadow: 100px 10px 40px #00000056;
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border-radius: 20px;
+  border: none;
+}
+.button > button:hover{
+    background-color: #77ffc0;
 }
