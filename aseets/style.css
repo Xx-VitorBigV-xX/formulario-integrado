@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&display=swap');
 body {
   margin: 0;
+  font-family: 'Noto Sans',sans-serif
 }
+ body *{
+  box-sizing: border-box;
+}     /* * bons costumes de programação*/
 .main_Login {
   background-color: #201b2c;
   width: 100vw;
@@ -22,7 +27,12 @@ body {
   flex-direction: column;
 }
 .left_login h1 {
+  font-size: 3vw;
   color: #77ffc0;
+}
+
+.left-login-image{
+  width: 35vw;
 }
 
 .right_login {
@@ -42,7 +52,15 @@ body {
   background: #2f2841;
   border-radius: 20px;
   box-shadow: 0px 10px 40px #00000056;
-  /* ! O primeiro valor se refere-se ao eixo x, segundo refere-se a sombra para baixo ou para cima,terceiro valor é o blur e o ultimo é a cor */
+  /* ! Horizontal Offset: Define o deslocamento horizontal da sombra em relação ao elemento. Valores positivos movem a sombra para a direita; valores negativos movem para a esquerda.
+
+  ! Vertical Offset: Define o deslocamento vertical da sombra em relação ao elemento. Valores positivos movem a sombra para baixo; valores negativos movem para cima.
+
+  ! Blur Radius: Determina o desfoque da sombra. Quanto maior o valor, mais difusa será a sombra.
+
+  ! Spread Radius: Controla a expansão ou contração da sombra. Um valor positivo aumenta a sombra, enquanto um valor negativo a torna menor. Este é opcional e pode ser omitido.
+
+  ! Color: Define a cor da sombra.*/
 }
 
 .title {
@@ -51,8 +69,10 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  text-transform: uppercase;
 }
 .textfild {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,6 +80,7 @@ body {
   margin-bottom: 25px;
 }
 .textfild input {
+  width: 100%;
   display: flex;
   border: none;
   border-radius: 10px;
@@ -77,9 +98,10 @@ body {
 }
 
 .label {
+  position: relative;
   display: flex;
   color: #f0ffffde;
-  margin-right: 8vw;
+  margin-right: 17vw;
   margin-bottom: 10px;
 }
 
@@ -88,19 +110,57 @@ body {
 }
 
 .button {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .button > button {
   background-color: #00ff88;
-  box-shadow: 100px 10px 40px #00000056;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
   width: 100%;
-  padding: 16px 0px;
-  margin: 25px;
+  padding: 20px 0px;
+  margin: 5px;
   border-radius: 20px;
   border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 3px;
+  color: #2b134b;
+
 }
 .button > button:hover{
     background-color: #77ffc0;
+}
+
+@media screen and (max-width:950px) {
+  .card_login{
+    width: 85%;
+  }
+
+}
+
+@media only screen and (max-width:600px){
+  .main_Login{
+    flex-direction: column;
+    height: auto;
+  }
+  .left_login > h1{
+    display: none;
+  }
+  .left_login{
+    width: 100%;
+    height: 50%;
+  }
+  .right_login{
+    width: 80%;
+    height: auto;
+  }
+ 
+  .left-login-image{
+    width: 45vw;
+  }
+
 }
